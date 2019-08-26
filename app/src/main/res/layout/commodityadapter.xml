@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <!--//  商品编号id，发布者账号userId，标题title，类别kind，内容info，价格price，图片image-->
+    <LinearLayout
+
+    android:layout_width="0dp"
+    android:layout_height="100dp"
+    android:layout_weight="2">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@android:drawable/alert_dark_frame"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/image_ap"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:paddingLeft="5dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/title_ap"
+            android:text="这是个标题"/>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/kind_ap"
+            android:text="这是个种类"/>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/info_ap"
+            android:text="这是个内容"/>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/price_ap"
+            android:text="价格"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="2"
+        >
+        <TextView
+            android:id="@+id/id_ap"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式：1706060205"/>
+    </LinearLayout>
+</LinearLayout>
